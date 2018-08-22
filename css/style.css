@@ -118,7 +118,6 @@ li {
 }
 
 .project-heading h1 {
-	position: absolute;
 	transform: translate(0%, -50%);
 	-moz-transform: translate(0%, -50%);
 	-webkit-transform: translate(0%, -50%);
@@ -140,7 +139,6 @@ li {
 }
 
 .project-heading h4 {
-	position: absolute;
 	transform: translate(0%, -50%);
 	-moz-transform: translate(0%, -50%);
 	-webkit-transform: translate(0%, -50%);
@@ -598,7 +596,7 @@ li {
 }
 
 .social-btns {
-	height: 5vh;
+	height: 5rem;
 	margin: auto;
 	font-size: 0;
 	text-align: center;
@@ -611,9 +609,9 @@ li {
 .social-btns .btn {
 	display: inline-block;
 	background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-	width: 5vw;
-	height: 5vh;
-	line-height: 5vh;
+	width: 5rem;
+	height: 5rem;
+	line-height: 5rem;
 	margin: 0 10px;
 	text-align: center;
 	position: relative;
@@ -634,6 +632,6 @@ li {
 .social-btns .btn .fab {
 	font-size: 2em;
 	vertical-align: middle;
-	padding-bottom: 20%;
+	padding-bottom: 30%;
 }
 

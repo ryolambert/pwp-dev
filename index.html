@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="no-js">
 	<head>
 		<title>Ryo Lambert - Web Dev / Front-End Engineer</title>
 		<meta charset="utf-8">
@@ -11,16 +10,19 @@
 		<!-- Bootstrap CSS -->
 		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
 				rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-				crossorigin="anonymous">
+				crossorigin="anonymous"/>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-				integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+				integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"/>
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Cutive+Mono|M+PLUS+1p:800|Roboto+Mono:700" rel="stylesheet"/>
+
 		<!-- Link to personal stylized CSS -->
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-		<link href="https://fonts.googleapis.com/css?family=Cutive+Mono|M+PLUS+1p:800|Roboto+Mono:700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
 
 
 		<!-- jQuery, Popper.js, then Bootstrap JS -->
-		<script src="js/js-dist.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
 				  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -28,10 +30,12 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
 				  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 				  crossorigin="anonymous"></script>
-		<script type="text/javascript" src="js/script.js"></script>
+
+
+		<script>document.documentElement.className = 'js';</script>
 	</head>
 
-	<body class="">
+	<body class="demo-6">
 		<header>
 			<div class="container">
 				<nav class="navbar navbar-expand-lg navbar-dark">
@@ -39,25 +43,71 @@
 				</nav>
 			</div>
 
-			<div class="navigation">
-				<input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+			<!--<div class="navigation">-->
+				<!--<input type="checkbox" class="navigation__checkbox" id="navi-toggle">-->
 
-				<label for="navi-toggle" class="navigation__button">
-					<span class="navigation__icon">≡</span>
-				</label>
+				<!--<label for="navi-toggle" class="navigation__button">-->
+					<!--<span class="navigation__icon">≡</span>-->
+				<!--</label>-->
 
-				<div class="navigation__background">&nbsp;</div>
+				<!--<div class="navigation__background">&nbsp;</div>-->
 
-				<nav class="navigation__nav">
-					<ul class="navigation__list">
-						<li class="navigation__item"><a href="#" class="navigation__link">HOME</a></li>
-						<li class="navigation__item"><a href="#" class="navigation__link">ABOUT</a></li>
-						<li class="navigation__item"><a href="#" class="navigation__link">DESIGN</a></li>
-						<li class="navigation__item"><a href="#" class="navigation__link">CODE</a></li>
-						<li class="navigation__item"><a href="#" class="navigation__link">CONTACT</a></li>
-					</ul>
-				</nav>
+				<!--<nav class="navigation__nav">-->
+					<!--<ul class="navigation__list">-->
+						<!--<li class="navigation__item"><a href="#" class="navigation__link">HOME</a></li>-->
+						<!--<li class="navigation__item"><a href="#" class="navigation__link">ABOUT</a></li>-->
+						<!--<li class="navigation__item"><a href="#" class="navigation__link">DESIGN</a></li>-->
+						<!--<li class="navigation__item"><a href="#" class="navigation__link">CODE</a></li>-->
+						<!--<li class="navigation__item"><a href="#" class="navigation__link">CONTACT</a></li>-->
+					<!--</ul>-->
+				<!--</nav>-->
+			<!--</div>-->
+
+			<div class="hamburger hamburger--demo-6 js-hover">
+				<div class="hamburger__line hamburger__line--01">
+					<div class="hamburger__line-in hamburger__line-in--01 hamburger__line-in--demo-5"></div>
+				</div>
+				<div class="hamburger__line hamburger__line--02">
+					<div class="hamburger__line-in hamburger__line-in--02 hamburger__line-in--demo-5"></div>
+				</div>
+				<div class="hamburger__line hamburger__line--03">
+					<div class="hamburger__line-in hamburger__line-in--03 hamburger__line-in--demo-5"></div>
+				</div>
+				<div class="hamburger__line hamburger__line--cross01">
+					<div class="hamburger__line-in hamburger__line-in--cross01 hamburger__line-in--demo-5"></div>
+				</div>
+				<div class="hamburger__line hamburger__line--cross02">
+					<div class="hamburger__line-in hamburger__line-in--cross02 hamburger__line-in--demo-5"></div>
+				</div>
 			</div>
+			<div class="global-menu">
+				<div class="global-menu__wrap">
+					<a class="global-menu__item global-menu__item--demo-6" href="#">HOME</a>
+					<a class="global-menu__item global-menu__item--demo-6" href="#">ABOUT</a>
+					<a class="global-menu__item global-menu__item--demo-6" href="#">DESIGN</a>
+					<a class="global-menu__item global-menu__item--demo-6" href="#">CODE</a>
+					<a class="global-menu__item global-menu__item--demo-6" href="#">CONTACT</a>
+				</div>
+			</div>
+			<svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+				<defs>
+					<linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%"   stop-color="#00c99b"/>
+						<stop offset="100%" stop-color="#ff0ea1"/>
+					</linearGradient>
+					<linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%"   stop-color="#ffd392"/>
+						<stop offset="100%" stop-color="#ff3898"/>
+					</linearGradient>
+					<linearGradient id="gradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%"   stop-color="#050013"/>
+						<stop offset="100%" stop-color="#32004a"/>
+					</linearGradient>
+				</defs>
+				<path class="shape-overlays__path"></path>
+				<path class="shape-overlays__path"></path>
+				<path class="shape-overlays__path"></path>
+			</svg>
 
 		</header>
 
@@ -117,6 +167,9 @@
 						class="fab fa-instagram"></i></a>
 				</div>
 			</footer>
+		<script type="text/javascript" src="js/nav.js"></script>
+		<script type="text/javascript" src="js/easings.js"></script>
+		<script type="text/javascript" src="js/overlay.js"></script>
 	</body>
 
 </html>
