@@ -19,25 +19,25 @@ class World {
 		this.camera.position.z = 200;
 		this.container.appendChild(this.renderer.domElement);
 		this.timer = 0;
-		this.mousePos = {x:0, y:0};
-		this.targetMousePos = {x:0, y:0};
+		this.mousePos = { x: 0, y: 0 };
+		this.targetMousePos = { x: 0, y: 0 };
 		this.createPlane();
 		this.render();
 	}
 
-	createPlane(){
+	createPlane() {
 		this.material = new THREE.RawShaderMaterial({
-			vertexShader: document.getElementById( 'vertexShader' ).textContent,
+			vertexShader: document.getElementById('vertexShader').textContent,
 			fragmentShader: document.getElementById('fragmentShader').textContent,
 
 			uniforms: {
 				uTime: { type: 'f', value: 0 },
-				uHue: {type: 'f', value: .5},
-				uHueVariation: {type: 'f', value: 1},
-				uGradient: {type: 'f', value: 1},
-				uDensity: {type: 'f', value: 1},
-				uDisplacement: {type: 'f', value: 1},
-				uMousePosition: {type: 'v2', value: new THREE.Vector2( 0.5, 0.5 ) }
+				uHue: { type: 'f', value: .5 },
+				uHueVariation: { type: 'f', value: 1 },
+				uGradient: { type: 'f', value: 1 },
+				uDensity: { type: 'f', value: 1 },
+				uDisplacement: { type: 'f', value: 1 },
+				uMousePosition: { type: 'v2', value: new THREE.Vector2(0.5, 0.5) }
 			}
 		});
 		this.planeGeometry = new THREE.PlaneGeometry(2, 2, 1, 1);
@@ -53,7 +53,7 @@ class World {
 		this.mousePos.x += (this.targetMousePos.x - this.mousePos.x) * .1;
 		this.mousePos.y += (this.targetMousePos.y - this.mousePos.y) * .1;
 
-		if (this.plane){
+		if (this.plane) {
 			this.plane.material.uniforms.uMousePosition.value = new THREE.Vector2(this.mousePos.x, this.mousePos.y);
 		}
 
@@ -77,17 +77,16 @@ class World {
 };
 
 document.addEventListener("DOMContentLoaded", domIsReady);
-let mousePos = {x:0, y:0, px:0, py:0};
+let mousePos = { x: 0, y: 0, px: 0, py: 0 };
 let world;
-let gui = new dat.GUI();
 
 
 let parameters = {
 	speed: .05,
-	hue: .5,
-	hueVariation: 0.39,
-	gradient: 12,
-	density: .01,
+	hue: .54,
+	hueVariation: 0.1,
+	gradient: 0.3,
+	density: .1,
 	displacement: .66,
 
 }
@@ -98,7 +97,6 @@ function domIsReady() {
 	document.addEventListener("mousemove", handleMouseMove, false);
 	handleWindowResize();
 	world.loop();
-	initGui();
 }
 
 function handleWindowResize() {
